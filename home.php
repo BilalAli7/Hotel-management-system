@@ -281,16 +281,78 @@ if($usermail == true){
     </div>
   </section>
 
-  <section id="contactus">
-    <div class="social">
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-solid fa-envelope"></i>
+  <!-- ===== FOOTER ===== -->
+  <footer id="site-footer">
+    <div class="footer-glow"></div>
+    <div class="footer-main">
+      <div class="footer-col footer-brand">
+        <div class="footer-logo">
+          <img src="./image/bluebirdlogo.png" alt="BlueBird Logo">
+          <span>BLUEBIRD</span>
+        </div>
+        <p class="footer-tagline">Experience luxury redefined. Nestled in serenity, Hotel BlueBird offers an unforgettable escape where elegance meets comfort.</p>
+        <div class="footer-social">
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#firstsection"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+          <li><a href="#secondsection"><i class="fa-solid fa-chevron-right"></i> Rooms</a></li>
+          <li><a href="#thirdsection"><i class="fa-solid fa-chevron-right"></i> Facilities</a></li>
+          <li><a href="#site-footer"><i class="fa-solid fa-chevron-right"></i> Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Contact Us</h4>
+        <ul class="footer-contact">
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>123 Paradise Avenue,<br>Heaven City, HC 56789</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <span>+1 (555) 123-4567</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <span>info@hotelbluebird.com</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-clock"></i>
+            <span>24 / 7 Front Desk</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Newsletter</h4>
+        <p class="newsletter-text">Subscribe to receive exclusive offers, travel tips, and the latest updates from BlueBird.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); swal({title:'Subscribed!', text:'Thank you for subscribing.', icon:'success'});">
+          <div class="newsletter-input-wrap">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+        </form>
+      </div>
     </div>
-    <div class="createdby">
-      <h5>Created by @tushar</h5>
+
+    <div class="footer-bottom">
+      <p>&copy; <?php echo date('Y'); ?> Hotel BlueBird. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Sitemap</a>
+      </div>
     </div>
-  </section>
+  </footer>
 </body>
 
 <script>
